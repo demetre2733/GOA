@@ -1,0 +1,251 @@
+body {
+    background: linear-gradient(to bottom, #181B2A 30%, #181B2A 70%);
+}
+
+.nav-bar {
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    position: relative;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.nav-content {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-bar ul {
+    position: relative;
+    top: 120px;
+    margin-left: 180px;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: lightgrey;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.4s;
+    margin: 0 5px;
+    margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: -30px;
+}
+
+.nav-bar ul li a:hover {
+    color: darkorange
+}
+
+.nav-bar h1 {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: -50px;
+    margin-top: -1px;
+    display: flex;
+    position: relative;
+}
+
+.maintext {
+    color: #fff;
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    width: 600px;
+    margin-left: 115px;
+    margin-top: 200px;
+}
+
+.desc {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+.container img {
+    margin-left: 110px;
+}
+
+.container a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 900;
+    text-decoration: none;
+    border: 1px solid #181B2A;
+    background-color: #181B2A;
+    border-radius: 7px;
+    margin-left: 120px;
+    margin-top: 20px;
+    display: flex;
+    padding: 20px;
+    width: 140px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container a:hover {
+    background-color: darkblue;
+    border-color: darkblue;
+}
+
+.mainlogo {
+    position: relative;
+    margin-left: 52%;
+    top: 95px;
+}
+
+.container {
+    width: 1450px;
+    border: 10px solid #FF696A;
+    margin-left: 11%;
+    border-radius: 40px;
+    height: 870px;
+    background-color: red;
+    margin-top: -40%;
+}
+
+.card1 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #EAF3F8;
+    border-radius: 25px;
+    background-color: #EAF3F8;
+    margin-left: 330px;
+    margin-top: -170px;
+}
+
+.card1 img {
+    margin-left: 55px;
+    margin-top: -33px;
+}
+
+.maindesc {
+    width: 180px;
+    font-size: 13px;
+    color: #181B2A;
+    height: 83px;
+    background-color: ghostwhite;
+    border: 1px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: -25px;
+}
+
+.maindescp {
+    font-size: 13px;
+    color: #181B2A;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -10px;
+}
+
+.card1maintext {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -70px;
+}
+
+.date {
+    color: #181B2A;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.card2 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #EAF3F8;
+    border-radius: 25px;
+    background-color: #EAF3F8;
+    margin-left: 250px;
+    margin-top: -195px;
+}
+
+.card2 img {
+    margin-left: 55px;
+    top: auto;
+    position: relative;
+}
+
+.maindesc2 {
+    width: 180px;
+    font-size: 13px;
+    color: #181B2A;
+    height: 83px;
+    background-color: ghostwhite;
+    border: 1px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: -20px;
+    position: relative;
+}
+
+.maindescp2 {
+    font-size: 13px;
+    color: #181B2A;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -10px;
+}
+
+.date2 {
+    color: #181B2A;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+
+#snowflakes-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+@media (min-width: 720px) and (max-width: 1280px) {
+    .container {
+        width: 95%;
+        margin-left: 20px;
+        top: -100px;
+        position: relative;
+
+    }
+    .nav-bar {
+        margin-left: -70px;
+        top: 10px;
+        position: relative;
+        z-index: 2;
+    }
+    .mainlogo {
+        top: 200px;
+        position: relative;
+        height: 600px;
+        margin-left: 700px;
+        width: 500px;
+        z-index: 2;
+    }
+    .card1 {
+        margin-left: 150px;
+        margin-top: -250px;
+        position: relative;
+        z-index: 2;
+    }
+}

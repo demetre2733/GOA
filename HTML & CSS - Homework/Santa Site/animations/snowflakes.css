@@ -1,0 +1,22 @@
+.snowflake {
+    position: fixed;
+    background: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    animation-name: fall;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* Randomize the starting positions and animation durations of the snowflakes */
+.snowflake:nth-child(1) { top: -10%; left: 10%; animation-duration: 8s; }
+.snowflake:nth-child(2) { top: -20%; left: 20%; animation-duration: 10s; }
+.snowflake:nth-child(3) { top: -30%; left: 30%; animation-duration: 12s; }
+/* Add more rules for more snowflakes */
+
+@keyframes fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+}

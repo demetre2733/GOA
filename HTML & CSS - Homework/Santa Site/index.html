@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Christmas Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<canvas id="snowflakes-canvas"></canvas>
+<script>
+    window.onload = function () {
+        var canvas = document.getElementById("snowflakes-canvas");
+        var ctx = canvas.getContext("2d");
+
+        var snowflakes = [];
+
+        function createSnowflakes() {
+            for (let i = 0; i < 140; i++) { // Increase for more snowflakes
+                snowflakes.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    size: Math.random() * 1 + 1, // Decrease for smaller snowflakes
+                    speed: Math.random() * 1 + 0.5 // Decrease for slower snowflakes
+                });
+            }
+        }
+
+        function updateSnowflakes() {
+            for (let flake of snowflakes) {
+                flake.y += flake.speed;
+                if (flake.y > canvas.height) {
+                    flake.y = 0;
+                }
+            }
+        }
+
+        function drawSnowflakes() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "rgba(255, 255, 255, 0.5)"; // Semi-transparent white
+            for (let flake of snowflakes) {
+                ctx.beginPath();
+                ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function animate() {
+            updateSnowflakes();
+            drawSnowflakes();
+            requestAnimationFrame(animate);
+        }
+
+        createSnowflakes();
+        animate();
+    }
+</script>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html">About the project</a>
+                </li>
+                <li>
+                    <a href="#">All activities</a>
+                </li>
+                <li>
+                    <a href="#">Gift ideas</a>
+                </li>
+                <li>
+                    <a href="#">Christmas markets</a>
+                </li>
+                <li>
+                    <a href="#">Places to go</a>
+                </li>
+            </ul>
+        </nav>
+        <img src="images/mainimage.png" class="mainlogo">
+    </header>
+
+
+    <div class="container">
+        <h1 class="maintext">Choose your ideal Christmas activities</h1>
+        <p class="desc">Spend your best holidays and choose amazing activities for all Christmas days!</p>
+        <img src="images/bar.png">
+        <a href="#">View all activities</a>
+    </div>
+    <div class="card1">
+        <h1 class="card1maintext">Special for you</h1>
+        <p class="date">26.12</p>
+        <img src="images/gift_icon.png">
+        <div class="maindesc">
+            <h1 class="buygifttxt">Buy gifts</h1>
+            <p class="maindescp">It is the perfect day to make acsuprise for yourself</p>
+        </div>
+        <div class="card2">
+            <p class="date2">26.12</p>
+            <img src="images/gift_icon.png">
+            <div class="maindesc2">
+                <h1 class="buygifttxt2">Buy gifts</h1>
+                <p class="maindescp2">It is the perfect day to make acsuprise for yourself</p>
+            </div>
+    </div>
+</body>
+
+</html>

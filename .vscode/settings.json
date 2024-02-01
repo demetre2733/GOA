@@ -1,0 +1,5 @@
+{
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "livePreview.defaultPreviewPath": "/HTML & CSS - Homework/Contact Us Form/index.html"
+}
