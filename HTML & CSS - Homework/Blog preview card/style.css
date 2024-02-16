@@ -92,3 +92,9 @@ body {
     font-weight: bold;
     position: relative;
 }
+
+@media (min-width: 430px) and (max-width: 932px) {
+    .main-container {
+        margin-left: 9px;
+    }
+}
