@@ -13,7 +13,7 @@ body {
     height: 32rem;
     display: flex;
     align-items: center;
-    justify-content: center; /* Added to center content horizontally */
+    justify-content: center; 
     margin: 0 auto;
     position: relative;
 }
