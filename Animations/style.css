@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+@keyframes anim {
+    0%   {background-color: darkblue; left:0px; top:0px;}
+    25%  {background-color: yellow; left:200px; top:0px;}
+    50%  {background-color: blue; left:200px; top:200px;}
+    75%  {background-color: green; left:0px; top:200px;}
+    100% {background-color: black; left:0px; top:0px;}
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 1px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: 30%;
+    background-color: red;
+    animation-name: anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes transformAnimation {
+    0%   {transform: scale(0.5) rotate(0deg); background-color: aquamarine;}
+    25%   {transform: scale(1) rotate(0deg); background-color: black;}
+    50%  {transform: scale(1.5) rotate(180deg); background-color: yellow;}
+    75%  {transform: scale(2) rotate(180deg); background-color: yellow;}
+    100% {transform: scale(1) rotate(360deg); background-color: blue;}
+}
+
+.squareeffect {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin-left: 15%;
+    animation-name: transformAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
