@@ -1,0 +1,230 @@
+@import url(https://db.onlinewebfonts.com/c/df2591b1990929433479786ecebcd5ea?family=Luengo+W00+Regular);
+
+body {
+    background: linear-gradient(#251E7E, #00459D, #004FA4, #0089C8, #FFFFFF);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 21%;
+}
+
+.main-site-logo-text {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    top: -29rem;
+    left: -35rem;
+    position: relative;
+}
+
+.main-background-image {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    top: 15%;
+    left: 60%;
+    position: absolute;
+}
+
+.main-site-logo-text img {
+    position: relative;
+    left: -5px;
+    top: 4px;
+}
+
+.main-site-header-text {
+    font-family: 'Luengo W00 Regular';
+    font-size: 65px;
+    top: -17rem;
+    left: -7rem;
+    color: #fff;
+    width: 700px;
+    position: relative;
+}
+
+.main-site-paragraph-text {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    top: -18rem;
+    left: -7rem;
+    z-index: 1;
+    position: relative;
+}
+
+.main-site-our-service-btn,
+.main-site-contactus-btn {
+    background-color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    color: #4B0082;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    top: -15rem;
+    left: -7rem;
+    z-index: 1;
+    transition: 0.3s;
+    position: relative;
+}
+
+.main-site-contactus-btn {
+    left: -5.5rem;
+    border: 1px solid #3E57D0;
+    background-color: #3E57D0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.main-site-contactus-btn:hover {
+    background-color: #4B0082;
+    border: 1px solid #4B0082;
+}
+
+.get-it-support-btn {
+    background-color: #7B68EE;
+    text-decoration: none;
+    border: 1px solid #7B68EE;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    left: 65%;
+    top: -57rem;
+    z-index: 1;
+    transition: 0.3s;
+    position: relative;
+}
+
+.get-it-support-btn:hover {
+    background-color: #4B0082;
+}
+
+.nav-bar ul li ul {
+    display: none;
+}
+
+.nav-bar ul li:hover ul {
+    display: block;
+}
+
+.nav-bar {
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    top: -23.7rem;
+    left: 10rem;
+}
+
+.nav-content {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.4s;
+    margin: 0 15px;
+    margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: -30px;
+}
+
+.nav-bar ul li a:hover {
+    color: #0089C8;
+}
+
+.nav-bar ul li {
+    position: relative;
+}
+
+.nav-bar ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar ul li:hover ul {
+    display: block;
+}
+
+.nav-bar ul li ul li {
+    width: 100%;
+}
+
+.nav-bar ul li ul li a {
+    padding: 10px 20px;
+    color: #000;
+    display: block;
+    margin-left: 10px;
+}
+
+.nav-bar ul li ul {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+}
+
+.nav-bar ul li:hover ul {
+    transform: scaleY(1);
+}
+
+.social-media p {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: -50rem;
+    margin-left: -10.5%;
+}
+
+.social-icons a {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border: 1px solid #2861AC;
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    font-size: 25px;
+    margin-right: 15px;
+    transition: 0.3s;
+    margin-top: 50px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.08);
+}

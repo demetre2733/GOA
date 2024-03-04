@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(90deg, #141e30, #243b55);
+}
+
+img {
+    width: 40%;
+    height: 50%;
+    border: 1px;
+    border-radius: 40px;
+    box-shadow: #243b55 10px 10px 10px 10px;
+    box-sizing: border-box;
+    object-fit: cover;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10rem;
+    display: flex;
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
